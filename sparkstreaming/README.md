@@ -25,7 +25,7 @@ jar cvf weblog.jar com/github/winse/spark/WebLogStreaming*
 [hadoop@cu2 spark-1.6.0-bin-2.6.3]$ bin/spark-submit --master local[2] --class com.github.winse.spark.WebLogStreaming ~/streaming/weblog.jar 
 ```
 
-## SparkStreaming前的测试
+## 附：SparkStreaming前的测试
 
 先用Spark程序实现功能，再封装成SparkStreaming
 
