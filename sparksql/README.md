@@ -10,7 +10,6 @@
 ```
 [hadoop@cu2 spark-2.0.0-bin-2.6.3]$ crontab -l
 0 4 * * * ( cd ~/lf/taobao; node crawler.js >> nohup.log  )
-```
 
 [hadoop@cu2 taobao]$ ls -l | head -n 20
 total 89452
@@ -33,6 +32,7 @@ drwxrwxr-x   3 hadoop hadoop    4096 Sep 20 17:01 com
 -rw-r--r--   1 hadoop hadoop 1876027 Oct  4 04:08 goods_base_info-2016-10-03.txt
 -rw-r--r--   1 hadoop hadoop 1877423 Oct  5 04:08 goods_base_info-2016-10-04.txt
 -rw-r--r--   1 hadoop hadoop 1882137 Oct  6 04:08 goods_base_info-2016-10-05.txt
+```
 
 * 然后添加hive的数据表，查看 `docs/createtable.sql`;
 * 然后把已经采集好的数据上传到HDFS，参见 `docs/loadfile.sh`;
